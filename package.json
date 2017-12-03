@@ -8,7 +8,9 @@
     "server": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "start": "node ./server/server.js",
+    "heroku-postbuild": "npm run build:prod"
   },
   "keywords": [],
   "author": "Bill Michael <billmike1994@gmail.com>",
@@ -25,6 +27,7 @@
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
     "enzyme-to-json": "^3.2.2",
+    "express": "^4.15.4",
     "extract-text-webpack-plugin": "^3.0.0",
     "jest": "^21.2.1",
     "live-server": "^1.2.0",
